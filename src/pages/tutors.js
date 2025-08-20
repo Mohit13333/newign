@@ -3,7 +3,6 @@ import BlogSection from '@/components/idbp/BlogSection';
 import CourseCard from '@/components/idbp/CourseCard';
 import FAQSection from '@/components/idbp/FaqSection';
 import IgniteAchievements from '@/components/idbp/IgniteAchievements';
-import InfoCard from '@/components/tutors/InfoCard';
 import LifeAtIgniteCarousel from '@/components/idbp/LifeAtIgniteCarousel';
 import MarqueeBanner from '@/components/idbp/MarqueeBanner';
 import ReviewsSection from '@/components/idbp/ReviewsSection';
@@ -12,6 +11,7 @@ import SubjectsCard from '@/components/idbp/SubjectCard';
 import UspsSection from '@/components/idbp/UspsSection';
 import { useEffect, useRef } from 'react';
 import CurriculumTestsComponent from '@/components/tutors/curriculum';
+import InfoCard from '@/components/tutors/infoCard';
 
 const Tutors = () => {
   const scrollRef = useRef(null);
