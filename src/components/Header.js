@@ -72,6 +72,14 @@ const Header = () => {
                                         <img src="/images/header-menu4.png" alt="Box 4" data-scroll data-scroll-class="is-clipped" data-scroll-repeat="true" />
                                         <h4>IB</h4>
                                     </a>
+                                    <a href='/subject-tutoring' className={styles.megaMenuBox}>
+                                        <img src="/images/header-menu4.png" alt="Box 4" data-scroll data-scroll-class="is-clipped" data-scroll-repeat="true" />
+                                        <h4>Subject Tutoring</h4>
+                                    </a>
+                                    <a href='/tutors' className={styles.megaMenuBox}>
+                                        <img src="/images/header-menu4.png" alt="Box 4" data-scroll data-scroll-class="is-clipped" data-scroll-repeat="true" />
+                                        <h4>Our Tutors</h4>
+                                    </a>
                                 </div>
                             </div>
                         </div>
