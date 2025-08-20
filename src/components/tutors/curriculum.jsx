@@ -1,7 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function IBCurriculumStages() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            setIsMobile(width < 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const curriculums = [
         "IB (MYP & IBDP)",
         "IGCSE / GCSE",
@@ -25,33 +37,71 @@ export default function IBCurriculumStages() {
         >
             {/* Header Section */}
             <div
-                className="container fade-in-section"
+                className="text-center mb-5 fade-in-section"
                 data-scroll
                 data-scroll-class="is-inview"
                 data-scroll-repeat
-                style={{ maxWidth: "1140px", animationDelay: "0.15s" }}
+                style={{ animationDelay: "0.15s" }}
             >
+                {/* Gradient subtitle with lines */}
                 <div
-                    className="curriculumSubSection"
-                    style={{ padding: "30px 0", marginBottom: "3rem" }}
+                    data-scroll
+                    data-scroll-class="is-inview"
+                    data-scroll-repeat="true"
+                    className="fade-in-section"
+                    style={{ animationDelay: "0.1s" }}
                 >
-                    <div className="SubHeading testSubheading">
+                    <div
+                        className={`SubHeading testSubheading ${isMobile ? "mobileFontOverride" : ""}`}
+                    >
                         WHAT CURRICULUM & STANDARDISED TESTS WE OFFER?
                     </div>
-                    <div className="testHeadings">
-                        <h2
-                            data-scroll
-                            data-scroll-class="is-inview"
-                            data-scroll-repeat="true"
-                            className="fade-in-section testTitle"
-                            style={{ animationDelay: "0.2s" }}
-                        >
-                            Lorem ipsum dolor sit amet,{" "}
-                            <span className="highlight">consectetur</span> adipiscing
-                        </h2>
-                    </div>
                 </div>
+
+                {/* Main title */}
+                <h2
+                    className="fw-bold mb-0 fade-in-section"
+                    data-scroll
+                    data-scroll-class="is-inview"
+                    data-scroll-repeat
+                    style={{
+                        animationDelay: "0.3s",
+                        fontSize: isMobile ? "1.5rem" : "2.5rem",
+                        lineHeight: "1.1",
+                        textTransform: "uppercase",
+                        marginTop: "3vh"
+                    }}
+                >
+                    <span
+                        style={{
+                            background: "linear-gradient(135deg, #3F88BA, #161664)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent"
+                        }}
+                    >
+                        LOREM IPSUM DOLOR SIT AMET,
+                    </span>{" "}
+                    <span
+                        style={{
+                            background: "linear-gradient(135deg, #00A491, #003E37)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent"
+                        }}
+                    >
+                        CONSECTETUR
+                    </span>{" "}
+                    <span
+                        style={{
+                            background: "linear-gradient(135deg, #3F88BA, #161664)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent"
+                        }}
+                    >
+                        ADIPISCING
+                    </span>
+                </h2>
             </div>
+
             <img src="/assets/bgrect25.png" alt="bg-shape" className="testimonialRect rect-1" />
             <img src="/assets/bgrect26.png" alt="bg-shape" className="testimonialRect rect-2" />
             <img src="/assets/bgrect27.png" alt="bg-shape" className="testimonialRect rect-3" />
@@ -120,6 +170,9 @@ export default function IBCurriculumStages() {
           opacity: 1;
           transform: translateY(0);
         }
+.mobileFontOverride {
+  font-size: 17px !important;
+}
 
         /* Header Section */
         .curriculumSubSection {
