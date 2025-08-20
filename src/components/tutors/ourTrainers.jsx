@@ -672,10 +672,10 @@ const trainers = [
 
 export default function Trainers({ }) {
 
-    const [isTrainersSwiper, setIsTrainersSwiper] = useState(false);
+    const [isTrainersSwiper, setIsTrainersSwiper] = useState(true);
     useEffect(() => {
         const handleResize = () => {
-            setIsTrainersSwiper(window.innerWidth <= 1199);
+            setIsTrainersSwiper(true);
         };
         handleResize();
         window.addEventListener("resize", handleResize);
