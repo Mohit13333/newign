@@ -89,8 +89,7 @@ const FAQSection = () => {
             </h1>
 
             <p
-              className="fs-5 lh-lg"
-              style={{ color: "#64748b", maxWidth: "28rem",fontSize: isMobile ? "1rem" : "23px", lineHeight: isMobile ? "1.5" : "1.2" }}
+              style={{ color: "#64748b", maxWidth: "28rem",fontSize: isMobile ? "1.2rem" : "23px", lineHeight: isMobile ? "1.5" : "1.2" }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -148,7 +147,6 @@ const FAQSection = () => {
                   }}
                 >
                   <p
-                    className="lh-lg"
                     style={{
                       color: "#64748b",
                       paddingRight: "1.5rem",
