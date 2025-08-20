@@ -16,12 +16,12 @@ export default function SubjectsCard1({ }) {
       className="fade-in-section subjects-card1-section"
       style={{ animationDelay: "0.2s" }}
     >
-       <div className="text-center mb-md-5 mb-4 fade-in-section"
-          data-scroll
-          data-scroll-class="is-inview"
-          data-scroll-repeat
-          style={{ animationDelay: "0.2s" }}>
-         <div className="testHeadings">
+      <div className="text-center mb-md-5 mb-4 fade-in-section"
+        data-scroll
+        data-scroll-class="is-inview"
+        data-scroll-repeat
+        style={{ animationDelay: "0.2s" }}>
+        <div className="testHeadings">
           <div
             data-scroll
             data-scroll-class="is-inview"
@@ -30,7 +30,7 @@ export default function SubjectsCard1({ }) {
             style={{ animationDelay: "0.1s" }}
           >
             <div className="SubHeading testSubheading">Subject
-</div>
+            </div>
           </div>
           <h2
             data-scroll
@@ -43,7 +43,7 @@ export default function SubjectsCard1({ }) {
             CONSECTETUR <span className="highlight">ADIPISCING</span>
           </h2>
         </div>
-        </div>
+      </div>
       <div className="container">
         <div className="subjects-card1-inner">
           <img
@@ -109,7 +109,13 @@ export default function SubjectsCard1({ }) {
         }
 
         .subjects-card1-section .subjects-card1-inner {
-          background: url(/assets/Rectangle120.png);
+border: 1px solid;
+
+border-image-source: linear-gradient(90deg, #00A491 0%, #003E37 127.82%);
+
+
+background: linear-gradient(90deg, #00A491 0%, #003E37 127.82%);
+
           background-size: cover;
           background-position: center;
           padding: 150px 30px;

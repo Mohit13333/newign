@@ -338,6 +338,7 @@ export default function IgniteCareerCard() {
 
           .ignite-description,
           .ignite-short-description {
+          font-size:15px;
             text-align: center;
           }
 

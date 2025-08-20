@@ -621,7 +621,6 @@ export default function InfoCard() {
             background: transparent !important;
             opacity: 1 !important;
             backdrop-filter: none !important;
-            padding: 2rem !important;
             padding-top: 4rem !important;
             z-index: 10;
           }

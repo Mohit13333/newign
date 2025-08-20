@@ -276,10 +276,14 @@
 
   .testSection1 .testTitle {
     max-width: 600px;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     margin: 20px auto;
   }
-
+.testTitle {
+    max-width: 600px;
+    font-size: 1.4rem !important;
+    margin: 20px auto;
+  }
   /* Hide Pagination Bullets for Mobile Swiper */
   .testSection1 .testMobileSwiper .swiper-pagination {
     display: none;
