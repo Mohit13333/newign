@@ -664,25 +664,41 @@ export default function BlogSection() {
             className="d-flex justify-content-center gap-3 pt-3 flex-wrap"
           >
             {categories.map((c) => (
-              <button
-                key={c}
-                onClick={() => selectCat(c)}
-                className={`btn btn-link text-decoration-none fw-bold text-uppercase border-0 pb-2 ${c === activeCat ? 'border-bottom border-2' : ''
-                  } fs-6 fs-sm-7`}
-                style={{
-                  letterSpacing: '0.1em',
-                  transition: 'color 0.3s ease',
-                  paddingBottom: '0.5rem',
-                  color: c === activeCat ? 'transparent' : '#64748b',
-                  background: c === activeCat ? 'linear-gradient(135deg, #00A491, #003E37)' : 'none',
-                  WebkitBackgroundClip: c === activeCat ? 'text' : 'unset',
-                  WebkitTextFillColor: c === activeCat ? 'transparent' : 'unset',
-                  borderColor: c === activeCat ? '#00A491' : 'transparent',
-                }}
-              >
-                {c}
-              </button>
-            ))}
+  <button
+    key={c}
+    onClick={() => selectCat(c)}
+    className="btn btn-link text-decoration-none fw-bold text-uppercase border-0 pb-2 fs-6 fs-sm-7"
+    style={{
+      letterSpacing: '0.1em',
+      transition: 'color 0.3s ease',
+      paddingBottom: '0.5rem',
+      color: c === activeCat ? 'transparent' : '#64748b',
+      background: c === activeCat ? 'linear-gradient(135deg, #00A491, #003E37)' : 'none',
+      WebkitBackgroundClip: c === activeCat ? 'text' : 'unset',
+      WebkitTextFillColor: c === activeCat ? 'transparent' : 'unset',
+
+      // underline gradient
+      position: 'relative',
+    }}
+  >
+    {c}
+    {c === activeCat && (
+      <span
+        style={{
+          content: '""',
+          position: 'absolute',
+          left: 0,
+          bottom: 4,
+          width: '90%',
+          height: '2px',
+          background: 'linear-gradient(135deg, #00A491, #003E37)',
+          borderRadius: '2px',
+        }}
+      />
+    )}
+  </button>
+))}
+
           </nav>
         </header>
 

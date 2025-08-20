@@ -1,7 +1,20 @@
 "use client"
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function InfoCard() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setIsMobile(width < 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <div
       className="container-fluid"
@@ -42,8 +55,7 @@ export default function InfoCard() {
                 data-scroll-repeat
                 style={{ lineHeight: "1.2", maxWidth: "470px", animationDelay: "0.2s" }}
               >
-                ADVANCED PLACEMENTS TUTORS IN DUBAI
-              </h1>
+                INTERNATIONAL BACCALAUREATE TUTORS IN DUBAI              </h1>
 
               <p
                 className="text-white mb-4 fade-in-section fs-6 fs-md-5"
@@ -52,7 +64,7 @@ export default function InfoCard() {
                 data-scroll-repeat
                 style={{ letterSpacing: "0.1em", opacity: "0.8", animationDelay: "0.25s" }}
               >
-                NEW AP BATCHES STARTS FROM 22ND AUGUST, 2025
+                Lorem ipsum dolor sit amet
               </p>
 
               <div
@@ -123,22 +135,40 @@ export default function InfoCard() {
                 experienced and certified IB tutors across various IB subjects.
               </p>
 
-              <div className="d-flex gap-3">
-                <button
-                  className="btn fw-bold text-uppercase d-flex align-items-center gap-2 shadow"
-                  style={{
-                    background: "linear-gradient(to right, #E7F6FF, #A3CAF5)",
-                    color: "#273972",
-                    borderRadius: "40px",
-                    fontSize: "0.95rem",
-                    padding: "12px 32px",
-                    boxShadow: "2px 4px 8px rgba(38, 66, 149, 0.5)",
-                  }}
-                >
-                  Get Free Demo
-                  <img src="/assets/rar.png" alt="right" width={35} height={35} />
-                </button>
-              </div>
+<div className={`${isMobile ? "grid text-center mx-50" : "d-flex"} gap-3`}   style={{ marginLeft: isMobile ? "30px" : "0", marginRight: isMobile ? "30px" : "0" }}
+>
+  <button
+    className={`btn fw-bold text-uppercase d-flex align-items-center gap-2 shadow ${isMobile ? " w-100 justify-content-between" : ""}`}
+    style={{
+      background: "linear-gradient(to right, #E7F6FF, #A3CAF5)",
+      color: "#273972",
+      borderRadius: "40px",
+      fontSize: "0.95rem",
+      padding: "12px 32px",
+      boxShadow: "2px 4px 8px rgba(38, 66, 149, 0.5)",
+      marginBottom: isMobile ? "1rem" : "0",
+    }}
+  >
+    IGCSE TUTORS
+    <img src="/assets/rar.png" alt="right" width={35} height={35} />
+  </button>
+
+  <button
+    className={`btn fw-bold text-uppercase d-flex align-items-center gap-2 shadow ${isMobile ? " w-100 justify-content-between" : ""}`}
+    style={{
+      background: "linear-gradient(to right, #E7F6FF, #A3CAF5)",
+      color: "#273972",
+      borderRadius: "40px",
+      fontSize: "0.95rem",
+      padding: "12px 32px",
+      boxShadow: "2px 4px 8px rgba(38, 66, 149, 0.5)",
+    }}
+  >
+    A-LEVELS TUTORS
+    <img src="/assets/rar.png" alt="right" width={35} height={35} />
+  </button>
+</div>
+
             </div>
 
             {/* Right Section - Form - Now taking 4 columns (1/3) */}
