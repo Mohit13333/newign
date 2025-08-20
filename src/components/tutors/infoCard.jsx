@@ -2,292 +2,290 @@
 import Image from "next/image";
 
 export default function InfoCard() {
-  return (
-    <div
-      className="container-fluid"
-      style={{ maxWidth: "90vw", margin: "2.5rem auto", animationDelay: "0.1s" }}
-    >
-      <div
-        className="position-relative overflow-hidden"
-        style={{
-          backgroundImage: "url('/assets/act.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          borderRadius: "1.5rem",
-          minHeight: "600px",
-        }}
-      >
-        {/* Dark overlay */}
+    return (
         <div
-          className="position-absolute top-0 start-0 w-100 h-100 fade-in-section"
-          data-scroll
-          data-scroll-class="is-inview"
-          data-scroll-repeat
-          style={{
-            background: "rgba(0, 0, 0, 0.6)",
-            borderRadius: "1.5rem",
-            animationDelay: "0.15s"
-          }}
-        ></div>
-
-        {/* Content container */}
-        <div className="position-relative h-100" style={{ zIndex: 1 }}>
-          <div className="row g-0 h-100">
-            {/* Left Section - Now taking 8 columns (2/3) */}
-            <div className="col-lg-8 d-flex flex-column justify-content-center pe-lg-4 p-4 left-content">
-              <h1
-                className="fw-bold text-white text-uppercase mb-3 fade-in-section fs-1 fs-md-2 fs-lg-1"
-                data-scroll
-                data-scroll-class="is-inview"
-                data-scroll-repeat
-                style={{ lineHeight: "1.2", maxWidth: "470px", animationDelay: "0.2s" }}
-              >
-                ACT Tutors In <br />Dubai, For Assured <br />High Scores
-              </h1>
-
-              <p
-                className="text-white mb-4 fade-in-section fs-6 fs-md-5"
-                data-scroll
-                data-scroll-class="is-inview"
-                data-scroll-repeat
-                style={{ letterSpacing: "0.1em", opacity: "0.8", animationDelay: "0.25s" }}
-              >
-                LOREM IPSUM DOLOR SIT AMET
-              </p>
-
-              <div
-                className="d-flex flex-wrap justify-content-evenly p-4 mb-4 fw-semibold fade-in-section info-row"
-                data-scroll
-                data-scroll-class="is-inview"
-                data-scroll-repeat
-                style={{
-                  background: "rgba(255, 255, 255, 0.1)",
-                  borderRadius: "60px",
-                  maxWidth: "700px",
-                  fontSize: "0.9rem",
-                  animationDelay: "0.3s",
-                }}
-              >
-                <div
-                  className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{
-                    borderRight: "1px solid rgba(255, 255, 255, 0.3)",
-                    animationDelay: "0.35s",
-                  }}
-                >
-                  <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/medal.png" alt="Grade Support" width={32} height={32} className="icon-img" />
-                  </div>
-                  Grade 8 to 12 <br /> Support
-                </div>
-
-                <div
-                  className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{
-                    borderRight: "1px solid rgba(255, 255, 255, 0.3)",
-                    animationDelay: "0.4s",
-                  }}
-                >
-                  <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/person.png" alt="Learning Mode" width={32} height={32} className="icon-img" />
-                  </div>
-                  Online <br /> & In-Person
-                </div>
-
-                <div
-                  className="d-flex flex-column align-items-center text-center text-white fade-in-section"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{ animationDelay: "0.45s" }}
-                >
-                  <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/location.png" alt="Location" width={32} height={32} className="icon-img" />
-                  </div>
-                  Dubai <br /> (DIFC, JLT)
-                </div>
-              </div>
-
-              <p
-                className="text-white mb-4"
-                style={{ maxWidth: "600px", fontSize: "1rem", lineHeight: "1.4", opacity: "0.9" }}
-              >
-                We provide comprehensive ACT test preparation with customized courses,
-                giving students access to high-quality learning with experienced and
-                certified ACT tutors to help achieve top scores.
-              </p>
-
-              <div className="d-flex gap-3">
-                <button
-                  className="btn fw-bold text-uppercase d-flex align-items-center gap-2 shadow"
-                  style={{
-                    background: "linear-gradient(to right, #E7F6FF, #A3CAF5)",
-                    color: "#273972",
-                    borderRadius: "40px",
-                    fontSize: "0.95rem",
-                    padding: "12px 32px",
-                    boxShadow: "2px 4px 8px rgba(38, 66, 149, 0.5)",
-                  }}
-                >
-                  Get Free Demo
-                  <img src="/assets/rar.png" alt="right" width={35} height={35} />
-                </button>
-              </div>
-            </div>
-
-            {/* Right Section - Form - Now taking 4 columns (1/3) */}
+            className="container-fluid"
+            style={{ maxWidth: "90vw", margin: "2.5rem auto", animationDelay: "0.1s" }}
+        >
             <div
-              className="col-lg-4 form-bg mt-4 mt-lg-0 d-flex align-items-center fade-in-section position-relative right-form"
-              data-scroll
-              data-scroll-class="is-inview"
-              data-scroll-repeat
-              style={{ animationDelay: "0.6s" }}
-            >
-              {/* Rectangle background images positioned within form section */}
-              <img src="/assets/rect1.png" alt="bg-shape" className="testimonialRect rect-1" />
-              <img src="/assets/rect2.png" alt="bg-shape" className="testimonialRect rect-2" />
-              <img src="/assets/rect3.png" alt="bg-shape" className="testimonialRect rect-3" />
-
-              <div
-                className="w-100 p-4 text-white form-container"
+                className="position-relative overflow-hidden"
                 style={{
-                  borderRadius: "40px",
-                  backgroundImage: "url('/assets/Rectangle390.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
+                    backgroundImage: "url('/assets/tutors.png')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    borderRadius: "1.5rem",
+                    minHeight: "600px",
                 }}
-              >
-                <h2
-                  className="fw-bold text-uppercase mb-4 fade-in-section fs-5 fs-md-4"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{ animationDelay: "0.65s" }}
-                >
-                  GET A FREE DEMO CLASS + <br /> FREE STUDY RESOURCES
-                </h2>
-
-                <div className="mb-3 fade-in-section"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{ animationDelay: "0.7s" }}
-                >
-                  <input
-                    type="text"
-                    className="form-control bg-transparent text-white fw-semibold"
-                    placeholder="NAME"
+            >
+                {/* Dark overlay */}
+                <div
+                    className="position-absolute top-0 start-0 w-100 h-100 fade-in-section"
+                    data-scroll
+                    data-scroll-class="is-inview"
+                    data-scroll-repeat
                     style={{
-                      border: "1.5px solid rgba(255, 255, 255, 0.5)",
-                      borderRadius: "40px",
-                      fontSize: "0.9rem",
-                      padding: "12px 15px",
+                        background: "rgba(0, 0, 0, 0.6)",
+                        borderRadius: "1.5rem",
+                        animationDelay: "0.15s"
                     }}
-                  />
-                </div>
+                ></div>
 
-                <div className="row g-2 mb-3 fade-in-section"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{ animationDelay: "0.75s" }}
-                >
-                  <div className="col-6">
-                    <input
-                      type="email"
-                      className="form-control bg-transparent text-white fw-semibold"
-                      placeholder="EMAIL"
-                      style={{
-                        border: "1.5px solid rgba(255, 255, 255, 0.5)",
-                        borderRadius: "40px",
-                        fontSize: "0.9rem",
-                        padding: "12px 15px",
-                      }}
-                    />
-                  </div>
-                  <div className="col-6">
-                    <input
-                      type="text"
-                      className="form-control bg-transparent text-white fw-semibold"
-                      placeholder="PH.NO"
-                      style={{
-                        border: "1.5px solid rgba(255, 255, 255, 0.5)",
-                        borderRadius: "40px",
-                        fontSize: "0.9rem",
-                        padding: "12px 15px",
-                      }}
-                    />
-                  </div>
-                </div>
+                {/* Content container */}
+                <div className="position-relative h-100" style={{ zIndex: 1 }}>
+                    <div className="row g-0 h-100">
+                        {/* Left Section - Now taking 8 columns (2/3) */}
+                        <div className="col-lg-8 d-flex flex-column justify-content-center pe-lg-4 p-4 left-content">
+                            <h1
+                                className="fw-bold text-white text-uppercase mb-3 fade-in-section fs-1 fs-md-2 fs-lg-1"
+                                data-scroll
+                                data-scroll-class="is-inview"
+                                data-scroll-repeat
+                                style={{ lineHeight: "1.2", maxWidth: "470px", animationDelay: "0.2s" }}
+                            >
+                                Ignite’s tutors in dubai for academic excellence
+                            </h1>
 
-                <div className="mb-3 fade-in-section"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{ animationDelay: "0.8s" }}
-                >
-                  <input
-                    type="text"
-                    className="form-control bg-transparent text-white fw-semibold"
-                    placeholder="SCHOOL"
-                    style={{
-                      border: "1.5px solid rgba(255, 255, 255, 0.5)",
-                      borderRadius: "40px",
-                      fontSize: "0.9rem",
-                      padding: "12px 15px",
-                    }}
-                  />
-                </div>
+                            <p
+                                className="text-white mb-4 fade-in-section fs-6 fs-md-5"
+                                data-scroll
+                                data-scroll-class="is-inview"
+                                data-scroll-repeat
+                                style={{ letterSpacing: "0.1em", opacity: "0.8", animationDelay: "0.25s" }}
+                            >
+                                LOREM IPSUM DOLOR SIT AMET
+                            </p>
 
-                <div className="mb-4 fade-in-section"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{ animationDelay: "0.85s" }}
-                >
-                  <textarea
-                    className="form-control bg-transparent text-white fw-semibold"
-                    placeholder="DROP A MESSAGE"
-                    rows="3"
-                    style={{
-                      border: "1.5px solid rgba(255, 255, 255, 0.5)",
-                      borderRadius: "29px",
-                      fontSize: "0.9rem",
-                      padding: "16px 15px",
-                      resize: "none",
-                    }}
-                  ></textarea>
-                </div>
+                            <div
+                                className="d-flex flex-wrap justify-content-evenly p-4 mb-4 fw-semibold fade-in-section info-row"
+                                data-scroll
+                                data-scroll-class="is-inview"
+                                data-scroll-repeat
+                                style={{
+                                    background: "rgba(255, 255, 255, 0.1)",
+                                    borderRadius: "100px",
+                                    maxWidth: "700px",
+                                    fontSize: "0.9rem",
+                                    animationDelay: "0.3s",
+                                }}
+                            >
+                                <div
+                                    className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{
+                                        borderRight: "1px solid rgba(255, 255, 255, 0.3)",
+                                        animationDelay: "0.35s",
+                                    }}
+                                >
+                                    <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
+                                        <Image src="/assets/checkmark.png" alt="Grade Support" width={38} height={38} className="icon-img" />
+                                    </div>
+                                    Assured Grade <br/>Improvement
+                                </div>
 
-                <button
-                  className="btn fw-bold text-uppercase d-flex align-items-center gap-3"
-                  style={{
-                    background: "transparent",
-                    color: "white",
-                    fontSize: "1rem",
-                    padding: "11px 28px",
-                    border: "1.5px solid rgba(255, 255, 255, 0.7)",
-                    borderRadius: "40px",
-                    transition: "all 0.3s ease",
-                  }}
-                >
-                  SUBMIT
-                  <img src="/assets/rwb.png" alt="right" width={35} height={35} />
-                </button>
-              </div>
+                                <div
+                                    className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{
+                                        borderRight: "1px solid rgba(255, 255, 255, 0.3)",
+                                        animationDelay: "0.4s",
+                                    }}
+                                >
+                                    <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
+                                        <Image src="/assets/person.png" alt="Learning Mode" width={28} height={38} className="icon-img" />
+                                    </div>
+                                    Online <br /> & In-Person
+                                </div>
+
+                                <div
+                                    className="d-flex flex-column align-items-center text-center text-white fade-in-section"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{ animationDelay: "0.45s" }}
+                                >
+                                    <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
+                                        <Image src="/assets/location.png" alt="Location" width={28} height={38} className="icon-img" />
+                                    </div>
+                                    Dubai <br /> (DIFC, JLT)
+                                </div>
+                            </div>
+
+                            <p
+                                className="text-white mb-4"
+                                style={{ maxWidth: "600px", fontSize: "1rem", lineHeight: "1.4", opacity: "0.9" }}
+                            >
+                                Discover excellence in English education with Dubai’s best tutors. Our experts ensure effective learning, boosting language skills for success. Join us to excel in English!
+                            </p>
+
+                            <div className="d-flex gap-3">
+                                <button
+                                    className="btn fw-bold text-uppercase d-flex align-items-center gap-2 shadow"
+                                    style={{
+                                        background: "linear-gradient(to right, #E7F6FF, #A3CAF5)",
+                                        color: "#273972",
+                                        borderRadius: "40px",
+                                        fontSize: "0.95rem",
+                                        padding: "12px 32px",
+                                        boxShadow: "2px 4px 8px rgba(38, 66, 149, 0.5)",
+                                    }}
+                                >
+                                    Get Free Demo
+                                    <img src="/assets/rar.png" alt="right" width={35} height={35} />
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Right Section - Form - Now taking 4 columns (1/3) */}
+                        <div
+                            className="col-lg-4 form-bg mt-4 mt-lg-0 d-flex align-items-center fade-in-section position-relative right-form"
+                            data-scroll
+                            data-scroll-class="is-inview"
+                            data-scroll-repeat
+                            style={{ animationDelay: "0.6s" }}
+                        >
+                            {/* Rectangle background images positioned within form section */}
+                            <img src="/assets/rect1.png" alt="bg-shape" className="testimonialRect rect-1" />
+                            <img src="/assets/rect2.png" alt="bg-shape" className="testimonialRect rect-2" />
+                            <img src="/assets/rect3.png" alt="bg-shape" className="testimonialRect rect-3" />
+
+                            <div
+                                className="w-100 p-4 text-white form-container"
+                                style={{
+                                    borderRadius: "40px",
+                                    backgroundImage: "url('/assets/Rectangle390.png')",
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat",
+                                }}
+                            >
+                                <h2
+                                    className="fw-bold text-uppercase mb-4 fade-in-section fs-5 fs-md-4"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{ animationDelay: "0.65s" }}
+                                >
+                                    GET A FREE DEMO CLASS + <br /> FREE STUDY RESOURCES
+                                </h2>
+
+                                <div className="mb-3 fade-in-section"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{ animationDelay: "0.7s" }}
+                                >
+                                    <input
+                                        type="text"
+                                        className="form-control bg-transparent text-white fw-semibold"
+                                        placeholder="NAME"
+                                        style={{
+                                            border: "1.5px solid rgba(255, 255, 255, 0.5)",
+                                            borderRadius: "40px",
+                                            fontSize: "0.9rem",
+                                            padding: "12px 15px",
+                                        }}
+                                    />
+                                </div>
+
+                                <div className="row g-2 mb-3 fade-in-section"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{ animationDelay: "0.75s" }}
+                                >
+                                    <div className="col-6">
+                                        <input
+                                            type="email"
+                                            className="form-control bg-transparent text-white fw-semibold"
+                                            placeholder="EMAIL"
+                                            style={{
+                                                border: "1.5px solid rgba(255, 255, 255, 0.5)",
+                                                borderRadius: "40px",
+                                                fontSize: "0.9rem",
+                                                padding: "12px 15px",
+                                            }}
+                                        />
+                                    </div>
+                                    <div className="col-6">
+                                        <input
+                                            type="text"
+                                            className="form-control bg-transparent text-white fw-semibold"
+                                            placeholder="PH.NO"
+                                            style={{
+                                                border: "1.5px solid rgba(255, 255, 255, 0.5)",
+                                                borderRadius: "40px",
+                                                fontSize: "0.9rem",
+                                                padding: "12px 15px",
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="mb-3 fade-in-section"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{ animationDelay: "0.8s" }}
+                                >
+                                    <input
+                                        type="text"
+                                        className="form-control bg-transparent text-white fw-semibold"
+                                        placeholder="SCHOOL"
+                                        style={{
+                                            border: "1.5px solid rgba(255, 255, 255, 0.5)",
+                                            borderRadius: "40px",
+                                            fontSize: "0.9rem",
+                                            padding: "12px 15px",
+                                        }}
+                                    />
+                                </div>
+
+                                <div className="mb-4 fade-in-section"
+                                    data-scroll
+                                    data-scroll-class="is-inview"
+                                    data-scroll-repeat
+                                    style={{ animationDelay: "0.85s" }}
+                                >
+                                    <textarea
+                                        className="form-control bg-transparent text-white fw-semibold"
+                                        placeholder="DROP A MESSAGE"
+                                        rows="3"
+                                        style={{
+                                            border: "1.5px solid rgba(255, 255, 255, 0.5)",
+                                            borderRadius: "29px",
+                                            fontSize: "0.9rem",
+                                            padding: "16px 15px",
+                                            resize: "none",
+                                        }}
+                                    ></textarea>
+                                </div>
+
+                                <button
+                                    className="btn fw-bold text-uppercase d-flex align-items-center gap-3"
+                                    style={{
+                                        background: "transparent",
+                                        color: "white",
+                                        fontSize: "1rem",
+                                        padding: "11px 28px",
+                                        border: "1.5px solid rgba(255, 255, 255, 0.7)",
+                                        borderRadius: "40px",
+                                        transition: "all 0.3s ease",
+                                    }}
+                                >
+                                    SUBMIT
+                                    <img src="/assets/rwb.png" alt="right" width={35} height={35} />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <style jsx>{`
+            <style jsx>{`
         .form-control::placeholder {
           color: rgba(255, 255, 255, 0.5) !important;
           font-weight: 600;
@@ -653,6 +651,6 @@ display: none !important;
           }
         }
       `}</style>
-    </div>
-  );
+        </div>
+    );
 }

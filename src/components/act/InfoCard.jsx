@@ -436,7 +436,7 @@ export default function InfoCard() {
                 data-scroll-repeat
                 style={{ lineHeight: "1.2", maxWidth: "470px", animationDelay: "0.2s" }}
               >
-                ACT Tutors In <br />Dubai, For Assured <br />High Scores
+                ACT Tutors In Dubai, For Assured High Scores
               </h1>
 
               <p
@@ -448,7 +448,6 @@ export default function InfoCard() {
               >
                 LOREM IPSUM DOLOR SIT AMET
               </p>
-
               <div
                 className="d-flex flex-wrap justify-content-evenly p-4 mb-4 fw-semibold fade-in-section info-row"
                 data-scroll
@@ -456,7 +455,7 @@ export default function InfoCard() {
                 data-scroll-repeat
                 style={{
                   background: "rgba(255, 255, 255, 0.1)",
-                  borderRadius: "60px",
+                  borderRadius: "100px",
                   maxWidth: "700px",
                   fontSize: "0.9rem",
                   animationDelay: "0.3s",
@@ -473,7 +472,7 @@ export default function InfoCard() {
                   }}
                 >
                   <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/medal.png" alt="Grade Support" width={32} height={32} className="icon-img" />
+                    <Image src="/assets/medal.png" alt="Grade Support" width={28} height={38} className="icon-img" />
                   </div>
                   Grade 8 to 12 <br /> Support
                 </div>
@@ -489,7 +488,7 @@ export default function InfoCard() {
                   }}
                 >
                   <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/person.png" alt="Learning Mode" width={32} height={32} className="icon-img" />
+                    <Image src="/assets/person.png" alt="Learning Mode" width={28} height={38} className="icon-img" />
                   </div>
                   Online <br /> & In-Person
                 </div>
@@ -502,12 +501,11 @@ export default function InfoCard() {
                   style={{ animationDelay: "0.45s" }}
                 >
                   <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/location.png" alt="Location" width={32} height={32} className="icon-img" />
+                    <Image src="/assets/location.png" alt="Location" width={28} height={38} className="icon-img" />
                   </div>
                   Dubai <br /> (DIFC, JLT)
                 </div>
               </div>
-
               <p
                 className="text-white mb-4"
                 style={{ maxWidth: "600px", fontSize: "1rem", lineHeight: "1.4", opacity: "0.9" }}

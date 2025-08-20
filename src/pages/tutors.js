@@ -12,6 +12,7 @@ import UspsSection from '@/components/idbp/UspsSection';
 import { useEffect, useRef } from 'react';
 import CurriculumTestsComponent from '@/components/tutors/curriculum';
 import InfoCard from '@/components/tutors/infoCard';
+import OurTrainers from '@/components/tutors/ourTrainers';
 
 const Tutors = () => {
   const scrollRef = useRef(null);
@@ -77,6 +78,9 @@ const Tutors = () => {
         <MarqueeBanner />
       </section>
 
+      <section data-scroll-section>
+        <OurTrainers />
+      </section>
       <section data-scroll-section>
         <UspsSection />
       </section>

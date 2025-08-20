@@ -436,7 +436,7 @@ export default function InfoCard() {
                 data-scroll-repeat
                 style={{ lineHeight: "1.2", maxWidth: "470px", animationDelay: "0.2s" }}
               >
-                ADVANCED <br /> PLACEMENTS TUTORS<br /> IN DUBAI
+                ADVANCED PLACEMENTS TUTORS IN DUBAI
               </h1>
 
               <p
@@ -449,64 +449,64 @@ export default function InfoCard() {
                 NEW AP BATCHES STARTS FROM 22ND AUGUST, 2025
               </p>
 
-              <div
-                className="d-flex flex-wrap justify-content-evenly p-4 mb-4 fw-semibold fade-in-section info-row"
-                data-scroll
-                data-scroll-class="is-inview"
-                data-scroll-repeat
-                style={{
-                  background: "rgba(255, 255, 255, 0.1)",
-                  borderRadius: "60px",
-                  maxWidth: "700px",
-                  fontSize: "0.9rem",
-                  animationDelay: "0.3s",
-                }}
-              >
-                <div
-                  className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{
-                    borderRight: "1px solid rgba(255, 255, 255, 0.3)",
-                    animationDelay: "0.35s",
-                  }}
-                >
-                  <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/medal.png" alt="Grade Support" width={32} height={32} className="icon-img" />
-                  </div>
-                  Grade 8 to 12 <br /> Support
-                </div>
-
-                <div
-                  className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{
-                    borderRight: "1px solid rgba(255, 255, 255, 0.3)",
-                    animationDelay: "0.4s",
-                  }}
-                >
-                  <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/person.png" alt="Learning Mode" width={32} height={32} className="icon-img" />
-                  </div>
-                  Online <br /> & In-Person
-                </div>
-
-                <div
-                  className="d-flex flex-column align-items-center text-center text-white fade-in-section"
-                  data-scroll
-                  data-scroll-class="is-inview"
-                  data-scroll-repeat
-                  style={{ animationDelay: "0.45s" }}
-                >
-                  <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
-                    <Image src="/assets/location.png" alt="Location" width={32} height={32} className="icon-img" />
-                  </div>
-                  Dubai <br /> (DIFC, JLT)
-                </div>
-              </div>
+             <div
+                          className="d-flex flex-wrap justify-content-evenly p-4 mb-4 fw-semibold fade-in-section info-row"
+                          data-scroll
+                          data-scroll-class="is-inview"
+                          data-scroll-repeat
+                          style={{
+                            background: "rgba(255, 255, 255, 0.1)",
+                            borderRadius: "100px",
+                            maxWidth: "700px",
+                            fontSize: "0.9rem",
+                            animationDelay: "0.3s",
+                          }}
+                        >
+                          <div
+                            className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
+                            data-scroll
+                            data-scroll-class="is-inview"
+                            data-scroll-repeat
+                            style={{
+                              borderRight: "1px solid rgba(255, 255, 255, 0.3)",
+                              animationDelay: "0.35s",
+                            }}
+                          >
+                            <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
+                              <Image src="/assets/medal.png" alt="Grade Support" width={28} height={38} className="icon-img" />
+                            </div>
+                            Grade 8 to 12 <br /> Support
+                          </div>
+          
+                          <div
+                            className="d-flex flex-column align-items-center text-center text-white pe-3 fade-in-section info-col"
+                            data-scroll
+                            data-scroll-class="is-inview"
+                            data-scroll-repeat
+                            style={{
+                              borderRight: "1px solid rgba(255, 255, 255, 0.3)",
+                              animationDelay: "0.4s",
+                            }}
+                          >
+                            <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
+                              <Image src="/assets/person.png" alt="Learning Mode" width={28} height={38} className="icon-img" />
+                            </div>
+                            Online <br /> & In-Person
+                          </div>
+          
+                          <div
+                            className="d-flex flex-column align-items-center text-center text-white fade-in-section"
+                            data-scroll
+                            data-scroll-class="is-inview"
+                            data-scroll-repeat
+                            style={{ animationDelay: "0.45s" }}
+                          >
+                            <div className="mb-2 icon-wrap" style={{ color: "#acf2d6" }}>
+                              <Image src="/assets/location.png" alt="Location" width={28} height={38} className="icon-img" />
+                            </div>
+                            Dubai <br /> (DIFC, JLT)
+                          </div>
+                        </div>
 
               <p
                 className="text-white mb-4"
